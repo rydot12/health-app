@@ -6,10 +6,34 @@ st.set_page_config(page_title="Macro Restaurant Finder", layout="centered")
 st.title("🍔 Macro-Based Restaurant Finder")
 
 # -------------------------
-# LOAD DATA
+# LOAD & CLEAN CSV DATA (SAFE VERSION)
 # -------------------------
-df = pd.read_csv("menu_data.csv")
-menu_items = df.to_dict("records")
+try:
+    df = pd.read_csv("menu_data.csv")
+
+    # Clean column names (fixes spaces/capitalization issues)
+    df.columns = df.columns.str.strip().str.lower()
+
+    # Ensure required columns exist
+    required_cols = ["restaurant", "name", "calories", "protein", "carbs", "fat"]
+    for col in required_cols:
+        if col not in df.columns:
+            st.error(f"Missing column in CSV: {col}")
+            st.stop()
+
+    # Convert numeric columns safely
+    for col in ["calories", "protein", "carbs", "fat"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # Drop rows with bad/missing data
+    df = df.dropna(subset=required_cols)
+
+    menu_items = df.to_dict("records")
+
+except Exception as e:
+    st.error("Error loading menu_data.csv")
+    st.write(e)
+    st.stop()
 
 # -------------------------
 # USER GOALS
@@ -30,7 +54,7 @@ carbs_eaten = st.number_input("Carbs eaten (g)", min_value=0)
 fat_eaten = st.number_input("Fat eaten (g)", min_value=0)
 
 # -------------------------
-# REMAINING
+# REMAINING MACROS
 # -------------------------
 remaining_calories = calorie_goal - calories_eaten
 remaining_protein = protein_goal - protein_eaten
@@ -48,7 +72,7 @@ st.write(f"Fat: {remaining_fat}")
 # -------------------------
 def meal_score(meal):
 
-    # HARD RULE: cannot exceed calories
+    # Hard rule: do not exceed calories
     if meal["calories"] > remaining_calories:
         return float("inf")
 
@@ -70,28 +94,28 @@ top_5_global = [
     if m["calories"] <= remaining_calories
 ][:5]
 
-for i, meal in enumerate(top_5_global, start=1):
-    st.write(
-        f"#{i} {meal['restaurant']} — {meal['name']} | "
-        f"{meal['calories']} cal | "
-        f"P:{meal['protein']} C:{meal['carbs']} F:{meal['fat']}"
-    )
+if len(top_5_global) == 0:
+    st.write("No meals fit within your remaining calories.")
+else:
+    for i, meal in enumerate(top_5_global, start=1):
+        st.write(
+            f"#{i} {meal['restaurant']} — {meal['name']} | "
+            f"{int(meal['calories'])} cal | "
+            f"P:{int(meal['protein'])} C:{int(meal['carbs'])} F:{int(meal['fat'])}"
+        )
 
 # -------------------------
 # RESTAURANT VIEW
 # -------------------------
-restaurants = sorted(list(set(item["restaurant"] for item in menu_items)))
+restaurants = sorted(df["restaurant"].unique())
 
 selected_restaurant = st.selectbox("Choose a Restaurant", restaurants)
 
-restaurant_items = [
-    i for i in menu_items
-    if i["restaurant"] == selected_restaurant
-]
+restaurant_items = df[df["restaurant"] == selected_restaurant].to_dict("records")
 
 ranked = sorted(restaurant_items, key=meal_score)
 
-# 🔥 NEW TOGGLE
+# Toggle view
 view_option = st.radio(
     "View Options",
     ["Top 5 Best Options", "Show Full Ranked Menu"]
@@ -100,7 +124,7 @@ view_option = st.radio(
 st.subheader(f"📍 {selected_restaurant} Options")
 
 # -------------------------
-# SHOW TOP 5 (RESTAURANT)
+# TOP 5 RESTAURANT
 # -------------------------
 if view_option == "Top 5 Best Options":
 
@@ -109,15 +133,18 @@ if view_option == "Top 5 Best Options":
         if m["calories"] <= remaining_calories
     ][:5]
 
-    for i, meal in enumerate(top_5_restaurant, start=1):
-        st.write(
-            f"#{i} {meal['name']} | "
-            f"{meal['calories']} cal | "
-            f"P:{meal['protein']} C:{meal['carbs']} F:{meal['fat']}"
-        )
+    if len(top_5_restaurant) == 0:
+        st.write("No meals fit within your remaining calories.")
+    else:
+        for i, meal in enumerate(top_5_restaurant, start=1):
+            st.write(
+                f"#{i} {meal['name']} | "
+                f"{int(meal['calories'])} cal | "
+                f"P:{int(meal['protein'])} C:{int(meal['carbs'])} F:{int(meal['fat'])}"
+            )
 
 # -------------------------
-# SHOW FULL MENU
+# FULL RANKED MENU
 # -------------------------
 else:
 
@@ -128,6 +155,6 @@ else:
 
         st.write(
             f"#{i} {meal['name']} | "
-            f"{meal['calories']} cal | "
-            f"P:{meal['protein']} C:{meal['carbs']} F:{meal['fat']} {label}"
+            f"{int(meal['calories'])} cal | "
+            f"P:{int(meal['protein'])} C:{int(meal['carbs'])} F:{int(meal['fat'])} {label}"
         )
