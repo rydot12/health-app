@@ -1,0 +1,245 @@
+restaurant,name,calories,protein,carbs,fat,category
+Whataburger,#1 Whataburger®,590,29,62,25,entree
+Whataburger,#2 Double Meat Whataburger®,830,47,62,44,entree
+Whataburger,#3 Triple Meat Whataburger®,1070,65,62,63,entree
+Whataburger,#4 Jalapeño & Cheese Whataburger®,680,34,63,32,entree
+Whataburger,#5 Bacon & Cheese Whataburger®,750,39,62,37,entree
+Whataburger,#6 Avocado Bacon Burger,820,37,52,52,entree
+Whataburger,#7 Whataburger Jr.®,310,14,37,11,entree
+Whataburger,#8 Double Meat Whataburger Jr.®,420,23,37,20,entree
+Whataburger,Bacon & Cheese Whataburger Jr.®,400,21,37,18,entree
+Whataburger,#10 Whatachick’n®Sandwich with Whatasauce™,540,32,54,22,entree
+Whataburger,#10 Whatachick’n®Sandwich with Mayonnaise,580,32,52,28,entree
+Whataburger,#11 Grilled Chicken Sandwich with Whatasauce™,430,32,44,14,entree
+Whataburger,#11 Grilled Chicken Sandwich with Mayonnaise,470,32,42,20,entree
+Whataburger,#12 Spicy Chicken Sandwich,550,31,50,26,entree
+Whataburger,#13 Whatachick’n®Strips (3),460,24,30,27,entree
+Whataburger,#14 Whatachick’n®Bites (6),390,30,25,19,entree
+Whataburger,#15 Whatachick’n®Bites (9),580,45,37,28,entree
+Whataburger,#16 Chicken Fajita Taco,340,29,31,11,entree
+Whataburger,Grilled Chicken Melt,390,33,39,11,entree
+Whataburger,Honey BBQ Chicken Strip Sandwich,890,38,87,42,entree
+Whataburger,"Whataburger Patty Melt
+®",940,49,45,61,entree
+Whataburger,Mushroom Swiss Burger,1110,56,61,70,entree
+Whataburger,Whatacatch® Sandwich,490,19,59,20,entree
+Whataburger,Grilled Veggie Wrap*,330,7,38,18,entree
+Whataburger,Sweet & Spicy Bacon Burger*,1080,60,69,62,entree
+Whataburger,Green Chile Double*,980,54,61,57,entree
+Whataburger,Buffalo Ranch Chicken Strip Sandwich†,990,41,90,51,entree
+Whataburger,Jr. Honey BBQ Chicken Strip Sandwich,650,28,63,31,entree
+Whataburger,Jr. Whataburger ® Patty Melt (Single Patty),640,28,45,37,entree
+Whataburger,Jr. Mushroom Swiss Burger,700,32,47,42,entree
+Whataburger,Jr. Sweet & Spicy Bacon Burger*,600,32,42,33,entree
+Whataburger,Jr. Green Chile Double*,540,28,37,30,entree
+Whataburger,Jr. Buffalo Ranch Chicken Strip Sandwich†,660,28,56,35,entree
+Whataburger,Justaburger®,300,14,35,11,entree
+Whataburger,Whatachick’n® Strips (2),300,16,20,18,entree
+Whataburger,Whatachick’n® Bites (4),260,20,16,12,entree
+Whataburger,Grilled Cheese,510,16,42,28,entree
+Whataburger,Apple & Cranberry Salad with Grilled Chicken,380,33,38,12,entree
+Whataburger,Apple & Cranberry Salad with Whatachick’n®,490,34,47,20,entree
+Whataburger,Apple & Cranberry Salad with Spicy Chicken,500,31,49,21,entree
+Whataburger,Cobb Salad,300,20,8,21,entree
+Whataburger,Cobb Salad with Grilled Chicken,430,44,10,23,entree
+Whataburger,Cobb Salad with Whatachick’n®,540,45,20,31,entree
+Whataburger,Cobb Salad with Spicy Chicken,550,43,21,32,entree
+Whataburger,Buffalo Ranch Chicken Salad† with Grilled Chicken,370,37,13,19,entree
+Whataburger,Buffalo Ranch Chicken Salad† with Whatachick’n®,480,38,23,27,entree
+Whataburger,Buffalo Ranch Chicken Salad† with Spicy Chicken,480,35,24,28,entree
+Whataburger,Garden Salad,160,10,10,10,entree
+Whataburger,Garden Salad with Grilled Chicken,290,34,12,12,entree
+Whataburger,Garden Salad with Whatachick’n®,400,35,22,20,entree
+Whataburger,Garden Salad with Spicy Chicken,400,32,22,21,entree
+Whataburger,Small French Fries,270,3,34,14,side
+Whataburger,Medium French Fries,400,4,51,21,side
+Whataburger,Large French Fries,530,6,68,28,side
+Whataburger,Medium Onion Rings,300,4,33,17,side
+Whataburger,Large Onion Rings,450,7,49,25,side
+Whataburger,Apple Slices,30,0,8,0,side
+Whataburger,Avocado,90,1,4,9,side
+Whataburger,Hard-Boiled Egg†,80,6,1,5,side
+Whataburger,Bacon (per slice),25,2,0,1.5,side
+Whataburger,Grilled Peppers and Onions,25,0,3,1.5,side
+Whataburger,Small American Cheese (per slice),45,3,0,3.5,side
+Whataburger,Large American Cheese (per slice),90,5,0,7,side
+Whataburger,Monterey Jack Cheese,60,3,0,5,side
+Whataburger,Shredded Cheddar Cheese,170,11,0,14,side
+Whataburger,Blue Cheese†,110,6,2,9,side
+Whataburger,Green Chiles*,40,1,5,2.5,side
+Whataburger,Fire Roasted Brown Mushrooms,15,1,1,1,side
+Whataburger,Fancy Ketchup (per portion cup),35,0,8,0,sauce
+Whataburger,Spicy Ketchup (per portion cup),30,0,7,0,sauce
+Whataburger,Picante Sauce (per portion cup),5,0,1,0,sauce
+Whataburger,Salsa Verde (per portion cup),5,0,1,0,sauce
+Whataburger,Margarine (per portion cup),35,0,0,4,sauce
+Whataburger,Balsamic Vinaigrette,180,0,10,15,sauce
+Whataburger,Buffalo Sauce,25,0,3,1.5,sauce
+Whataburger,Buttermilk Ranch Dressing,240,1,3,25,sauce
+Whataburger,Cream Gravy,60,0,8,3,sauce
+Whataburger,Creamy Pepper Sauce,240,1,4,24,sauce
+Whataburger,Fat-Free Ranch Dressing,50,1,13,0,sauce
+Whataburger,Honey BBQ Sauce,90,0,22,0,sauce
+Whataburger,Honey Butter Sauce,300,0,20,24,sauce
+Whataburger,Honey Mustard Sauce,200,1,15,16,sauce
+Whataburger,Jalapeño Ranch Dressing,280,0,2,30,sauce
+Whataburger,Low-Fat Herb Vinaigrette,35,0,7,0.5,sauce
+Whataburger,Low-Fat Honey Pepper Vinaigrette,90,0,15,3.5,sauce
+Whataburger,Sugar-Free Pancake Syrup,25,0,10,0,sauce
+Whataburger,Pancake Syrup,160,0,39,0,sauce
+Whataburger,Thousand Island Dressing,260,1,8,25,sauce
+Whataburger,#20 Taquito with Cheese & Bacon,400,20,29,23,entree
+Whataburger,#20 Taquito with Cheese & Chorizo*,450,19,28,28,entree
+Whataburger,#20 Taquito with Cheese & Potato,440,17,38,25,entree
+Whataburger,#20 Taquito with Cheese & Sausage,420,19,28,26,entree
+Whataburger,#21 Breakfast On A Bun® with Bacon,360,18,35,16,entree
+Whataburger,#21 Breakfast On A Bun® with Sausage,510,27,35,28,entree
+Whataburger,#22 Buttermilk Biscuit Sandwich with Bacon,490,18,35,31,entree
+Whataburger,#22 Buttermilk Biscuit Sandwich with Sausage,640,27,35,44,entree
+Whataburger,#22 Jalapeño Cheddar Biscuit Sandwich with Bacon,500,19,31,32,entree
+Whataburger,#22 Jalapeño Cheddar Biscuit Sandwich with Sausage,640,28,31,45,entree
+Whataburger,#23 Pancake Platter with Bacon,680,12,109,21,entree
+Whataburger,#23 Pancake Platter with Sausage,830,21,109,33,entree
+Whataburger,#24 Breakfast Platter with Bacon,600,28,39,38,entree
+Whataburger,#24 Breakfast Platter with Sausage,750,37,39,50,entree
+Whataburger,#25 Honey Butter Chicken Biscuit,580,13,52,36,entree
+Whataburger,#26 Buttermilk Biscuit & Gravy,490,8,49,30,entree
+Whataburger,#26 Jalapeño Cheddar Biscuit & Gravy,490,9,44,31,entree
+Whataburger,Buttermilk Biscuit,310,5,34,17,entree
+Whataburger,Buttermilk Biscuit with Bacon,360,8,35,21,entree
+Whataburger,Buttermilk Biscuit with Sausage,510,17,35,34,entree
+Whataburger,Buttermilk Biscuit with Egg & Cheese,440,14,35,27,entree
+Whataburger,Jalapeño Cheddar Biscuit,310,6,30,18,entree
+Whataburger,Jalapeño Cheddar Biscuit with Bacon,370,9,31,23,entree
+Whataburger,Jalapeño Cheddar Biscuit with Sausage,510,18,30,35,entree
+Whataburger,Jalapeño Cheddar Biscuit with Egg & Cheese,440,16,30,28,entree
+Whataburger,Taquito with Bacon,360,17,29,20,entree
+Whataburger,Taquito with Sausage,380,16,28,23,entree
+Whataburger,Taquito with Potato,400,15,38,21,entree
+Whataburger,Cinnamon Roll (single),580,8,103,16,entree
+Whataburger,Egg Sandwich,310,15,34,12,entree
+Whataburger,Grits*,100,2,22,0.5,entree
+Whataburger,Hashbrowns,190,2,21,11,entree
+Whataburger,Pancakes with syrup & margarine,630,9,108,17,entree
+Whataburger,Orange Juice (11.5 fl oz),160,2,37,0,drink
+Whataburger,1% Low Fat Milk (8 fl oz),110,9,13,2.5,drink
+Whataburger,1% Low Fat Chocolate Milk (8 fl oz),160,8,27,2.5,drink
+Whataburger,Small Coffee (12 fl oz),5,0,0,0,drink
+Whataburger,Medium Coffee (16 fl oz),5,1,0,0,drink
+Whataburger,Large Coffee (20 fl oz),5,1,0,0,drink
+Whataburger,Kid’s Unsweet Tea (16 fl oz),5,0,1,0,drink
+Whataburger,Small Unsweet Tea (20 fl oz),5,0,2,0,drink
+Whataburger,Medium Unsweet Tea (32 fl oz),10,0,3,0,drink
+Whataburger,Large Unsweet Tea (44 fl oz),15,0,4,0,drink
+Whataburger,Kid’s Sweet Tea (16 fl oz),220,0,58,0,drink
+Whataburger,Small Sweet Tea (20 fl oz),280,0,72,0,drink
+Whataburger,Medium Sweet Tea (32 fl oz),440,0,115,0,drink
+Whataburger,Large Sweet Tea (44 fl oz),610,0,158,0,drink
+Whataburger,Hot Apple Pie,270,3,34,14,side
+Whataburger,Hot Lemon Pie,320,4,41,16,side
+Whataburger,Fruit Chews,80,1,19,0,side
+Whataburger,Cinnamon Roll (single),580,8,103,16,side
+Whataburger,Chocolate Chunk Cookie,230,2,32,11,side
+Whataburger,Sugar Cookie,230,3,34,10,side
+Whataburger,Small Chocolate Shake (16 fl oz),440,10,80,11,drink
+Whataburger,Medium Chocolate Shake (20 fl oz),560,13,102,14,drink
+Whataburger,Large Chocolate Shake (32 fl oz),890,20,159,23,drink
+Whataburger,Small Chocolate Malt (16 fl oz),460,10,85,11,drink
+Whataburger,Medium Chocolate Malt (20 fl oz),590,12,110,13,drink
+Whataburger,Large Chocolate Malt (32 fl oz),920,19,170,22,drink
+Whataburger,Small Strawberry Shake (16 fl oz),450,9,80,11,drink
+Whataburger,Medium Strawberry Shake (20 fl oz),560,12,103,14,drink
+Whataburger,Large Strawberry Shake (32 fl oz),890,19,160,22,drink
+Whataburger,Small Strawberry Malt (16 fl oz),460,9,85,11,drink
+Whataburger,Medium Strawberry Malt (20 fl oz),590,11,111,13,drink
+Whataburger,Large Strawberry Malt (32 fl oz),920,18,171,21,drink
+Whataburger,Small Vanilla Shake (16 fl oz),410,10,69,12,drink
+Whataburger,Medium Vanilla Shake (20 fl oz),510,13,86,15,drink
+Whataburger,Large Vanilla Shake (32 fl oz),820,21,137,24,drink
+Whataburger,Small Vanilla Malt (16 fl oz),430,10,74,12,drink
+Whataburger,Medium Vanilla Malt (20 fl oz),540,12,94,14,drink
+Whataburger,Large Vanilla Malt (32 fl oz),860,20,148,23,drink
+Whataburger,Small Dr Pepper ® Shake† (16 fl oz),430,9,78,11,drink
+Whataburger,Medium Dr Pepper ® Shake† (20 fl oz),550,12,100,14,drink
+Whataburger,Large Dr Pepper ® Shake† (32 fl oz),870,19,157,22,drink
+Whataburger,Kid’s Coca-Cola ® Classic (16 fl oz),200,0,54,0,drink
+Whataburger,Small Coca-Cola ® Classic (20 fl oz),250,0,67,0,drink
+Whataburger,Medium Coca-Cola ® Classic (32 fl oz),390,0,107,0,drink
+Whataburger,Large Coca-Cola ® Classic (44 fl oz),540,0,147,0,drink
+Whataburger,Kid’s Cherry Coke ® (16 fl oz),210,0,56,0,drink
+Whataburger,Small Cherry Coke ® (20 fl oz),260,0,70,0,drink
+Whataburger,Medium Cherry Coke ® (32 fl oz),410,0,112,0,drink
+Whataburger,Large Cherry Coke ® (44 fl oz),560,0,154,0,drink
+Whataburger,Kid’s Sprite ® (16 fl oz),180,0,50,0,drink
+Whataburger,Small Sprite ® (20 fl oz),230,0,62,0,drink
+Whataburger,Medium Sprite ® (32 fl oz),370,0,99,0,drink
+Whataburger,Large Sprite ® (44 fl oz),510,0,137,0,drink
+Whataburger,Kid’s Dr Pepper ® (16 fl oz),190,0,52,0,drink
+Whataburger,Small Dr Pepper ® (20 fl oz),240,0,65,0,drink
+Whataburger,Medium Dr Pepper ® (32 fl oz),380,0,104,0,drink
+Whataburger,Large Dr Pepper ® (44 fl oz),530,0,143,0,drink
+Whataburger,Large Diet Dr Pepper ® (44 fl oz),5,0,1,0,drink
+Whataburger,Kid’s Barq’s ® Root Beer (16 fl oz),210,0,58,0,drink
+Whataburger,Small Barq’s ® Root Beer (20 fl oz),270,0,73,0,drink
+Whataburger,Medium Barq’s ® Root Beer (32 fl oz),430,0,116,0,drink
+Whataburger,Large Barq’s ® Root Beer (44 fl oz),590,0,160,0,drink
+Whataburger,Kid’s Minute Maid ® Light Lemonade (16 fl oz),10,0,3,0,drink
+Whataburger,Small Minute Maid ® Light Lemonade (20 fl oz),10,0,3,0,drink
+Whataburger,Medium Minute Maid ® Light Lemonade (32 fl oz),15,0,5,0,drink
+Whataburger,Large Minute Maid ® Light Lemonade (44 fl oz),25,0,7,0,drink
+Whataburger,Kid’s POWERADE ® Mountain Blast (16 fl oz),110,0,29,0,drink
+Whataburger,Small POWERADE ® Mountain Blast (20 fl oz),140,0,37,0,drink
+Whataburger,Medium POWERADE ® Mountain Blast (32 fl oz),220,0,58,0,drink
+Whataburger,Large POWERADE ® Mountain Blast (44 fl oz),310,0,80,0,drink
+Whataburger,Kid’s POWERADE ® Fruit Punch (16 fl oz),110,0,30,0,drink
+Whataburger,Small POWERADE ® Fruit Punch (20 fl oz),130,0,37,0,drink
+Whataburger,Medium POWERADE ® Fruit Punch (32 fl oz),220,0,59,0,drink
+Whataburger,Large POWERADE ® Fruit Punch (44 fl oz),300,0,82,0,drink
+Whataburger,Kid’s Hi-C® Orange Lavaburst (16 fl oz),220,0,58,0,drink
+Whataburger,Small Hi-C® Orange Lavaburst (20 fl oz),280,0,73,0,drink
+Whataburger,Medium Hi-C® Orange Lavaburst (32 fl oz),440,0,116,0,drink
+Whataburger,Large Hi-C® Orange Lavaburst (44 fl oz),610,0,160,0,drink
+Whataburger,Kid’s Hi-C® Poppin’ Pink Lemonade (16 fl oz),190,0,50,0,drink
+Whataburger,Small Hi-C® Poppin’ Pink Lemonade (20 fl oz),240,0,63,0,drink
+Whataburger,Medium Hi-C® Poppin’ Pink Lemonade (32 fl oz),380,0,100,0,drink
+Whataburger,Large Hi-C® Poppin’ Pink Lemonade (44 fl oz),520,0,138,0,drink
+Whataburger,Kid’s Fanta ® Orange (16 fl oz),200,0,54,0,drink
+Whataburger,Small Fanta ® Orange (20 fl oz),250,0,67,0,drink
+Whataburger,Medium Fanta ® Orange (32 fl oz),390,0,108,0,drink
+Whataburger,Large Fanta ® Orange (44 fl oz),540,0,148,0,drink
+Whataburger,Kid’s Fanta ® Strawberry (16 fl oz),220,0,59,0,drink
+Whataburger,Small Fanta ® Strawberry (20 fl oz),270,0,74,0,drink
+Whataburger,Medium Fanta ® Strawberry (32 fl oz),430,0,118,0,drink
+Whataburger,Large Fanta ® Strawberry (44 fl oz),600,0,162,0,drink
+Whataburger,Kid’s Mello Yello ® (16 fl oz),220,0,58,0,drink
+Whataburger,Small Mello Yello ® (20 fl oz),270,0,73,0,drink
+Whataburger,Medium Mello Yello ® (32 fl oz),440,0,116,0,drink
+Whataburger,Large Mello Yello ® (44 fl oz),600,0,160,0,drink
+Whataburger,Kid’s Fuze® Raspberry Tea (16 fl oz),110,0,31,0,drink
+Whataburger,Small Fuze® Raspberry Tea (20 fl oz),140,0,38,0,drink
+Whataburger,Medium Fuze® Raspberry Tea (32 fl oz),220,0,61,0,drink
+Whataburger,Large Fuze® Raspberry Tea (44 fl oz),310,0,84,0,drink
+Whataburger,Kid’s Pibb ® Xtra (16 fl oz),190,0,50,0,drink
+Whataburger,Small Pibb ® Xtra (20 fl oz),240,0,63,0,drink
+Whataburger,Medium Pibb ® Xtra (32 fl oz),380,0,101,0,drink
+Whataburger,Large Pibb ® Xtra (44 fl oz),530,0,139,0,drink
+McDonalds,McDouble,390,22,32,20,entree
+McDonalds,Cheeseburger,300,15,33,13,entree
+McDonalds,Big Mac,550,25,45,30,entree
+McDonalds,Quarter Pounder,520,30,42,26,entree
+McDonalds,McChicken,400,14,39,21,entree
+McDonalds,10 McNuggets,410,24,26,24,entree
+McDonalds,Filet O Fish,390,16,38,19,entree
+McDonalds,Egg McMuffin,310,17,30,13,entree
+McDonalds,Sausage McMuffin,400,14,29,26,entree
+McDonalds,Grilled Chicken Sandwich,380,28,44,10,entree
+Panda Express,Grilled Teriyaki Chicken,300,36,8,13,entree
+Panda Express,Orange Chicken,380,13,45,19,entree
+Panda Express,Broccoli Beef,150,9,13,7,entree
+Panda Express,Kung Pao Chicken,290,16,14,19,entree
+Panda Express,Honey Sesame Chicken,340,16,35,18,entree
+Panda Express,Beijing Beef,470,14,46,26,entree
+Panda Express,String Bean Chicken,210,14,13,12,entree
+Panda Express,Mushroom Chicken,220,13,10,14,entree
+Panda Express,Fried Rice,520,11,85,16,entree
+Panda Express,Chow Mein,510,9,80,20,entree
