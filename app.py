@@ -66,12 +66,11 @@ def meal_score(meal):
     )
 
 # -------------------------
-# TOP GLOBAL (ENTREES + SIDES ONLY)
+# GLOBAL TOP 5 (ENTREES + SIDES ONLY)
 # -------------------------
 st.subheader("🔥 Top 5 Entrees & Sides (All Restaurants)")
 
 global_filtered = df[df["category"].isin(["entree", "side"])]
-
 global_ranked = sorted(global_filtered.to_dict("records"), key=meal_score)
 
 top_5 = [m for m in global_ranked if m["calories"] <= remaining_calories][:5]
@@ -88,9 +87,17 @@ selected_restaurant = st.selectbox("Choose Restaurant", restaurants)
 restaurant_df = df[df["restaurant"] == selected_restaurant]
 
 # -------------------------
-# SHOW ENTREES + SIDES (RANKED)
+# TOGGLE: TOP 5 OR ALL
 # -------------------------
-st.subheader("🍔 Entrees & Sides (Ranked)")
+view_option = st.radio(
+    "View Entrees & Sides",
+    ["Top 5", "Show All"]
+)
+
+# -------------------------
+# SHOW ENTREE + SIDES
+# -------------------------
+st.subheader("🍔 Entrees & Sides")
 
 main_items = restaurant_df[
     restaurant_df["category"].isin(["entree", "side"])
@@ -98,11 +105,16 @@ main_items = restaurant_df[
 
 ranked = sorted(main_items, key=meal_score)
 
-for i, meal in enumerate(ranked, 1):
+if view_option == "Top 5":
+    display_items = ranked[:5]
+else:
+    display_items = ranked
+
+for i, meal in enumerate(display_items, 1):
     st.write(f"#{i} {meal['name']} | {int(meal['calories'])} cal")
 
 # -------------------------
-# SHOW DRINKS + SAUCES
+# DRINKS + SAUCES
 # -------------------------
 st.subheader("🥤 Drinks & Sauces")
 
@@ -120,21 +132,24 @@ selected_extras = st.multiselect(
 # -------------------------
 st.subheader("🍽 Build Your Meal")
 
-entree_choice = st.selectbox(
-    "Select Entree",
-    restaurant_df[restaurant_df["category"] == "entree"]["name"].tolist()
-)
+entree_choices = restaurant_df[
+    restaurant_df["category"] == "entree"
+]["name"].tolist()
 
-side_choices = st.multiselect(
-    "Select Sides",
-    restaurant_df[restaurant_df["category"] == "side"]["name"].tolist()
-)
+side_choices = restaurant_df[
+    restaurant_df["category"] == "side"
+]["name"].tolist()
+
+entree_choice = st.selectbox("Select Entree", entree_choices)
+selected_sides = st.multiselect("Select Sides", side_choices)
 
 # -------------------------
 # CALCULATE TOTAL
 # -------------------------
 selected_items = restaurant_df[
-    restaurant_df["name"].isin([entree_choice] + side_choices + selected_extras)
+    restaurant_df["name"].isin(
+        [entree_choice] + selected_sides + selected_extras
+    )
 ]
 
 total_calories = selected_items["calories"].sum()
@@ -149,7 +164,9 @@ st.write(f"Protein: {int(total_protein)}")
 st.write(f"Carbs: {int(total_carbs)}")
 st.write(f"Fat: {int(total_fat)}")
 
-# Remaining after meal
+# -------------------------
+# REMAINING AFTER MEAL
+# -------------------------
 st.subheader("Remaining After This Meal")
 
 st.write(f"Calories Left: {int(remaining_calories - total_calories)}")
